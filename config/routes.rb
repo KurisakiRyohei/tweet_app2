@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'tweets/new' => 'tweets#new'
   post 'tweets' => 'tweets#create'
   delete 'tweets/:id' => 'tweets#destroy'
+  patch 'tweets/:id' => 'tweets#update'
+  get 'tweets/:id/edit' => 'tweets#edit'
   get 'users/:user_id' => 'users#show'
  
   # The priority is based upon order of creation: first created -> highest priority.
