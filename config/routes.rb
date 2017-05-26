@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   patch 'tweets/:id' => 'tweets#update'
   get 'tweets/:id/edit' => 'tweets#edit'
   get 'users/:user_id' => 'users#show'
+  get 'tweets/:id' => 'tweets#show'
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
