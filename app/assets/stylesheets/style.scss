@@ -315,6 +315,16 @@ div.contents.row {
       }
     }
   }
+
+    .like_box{
+        width: 50px;
+        height: 50px;
+    }
+
+    .fa-heart{
+        color:#FF3333;
+    }
+
   form {
     @include boxBase(20px 0 ,30px);
     box-shadow: 0 0 10px rgba($black,0.2);
