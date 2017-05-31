@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
-	before_action :move_to_index
+	before_action :authenticate_user!
 
 	def like 
 		@tweet = Tweet.find(params[:tweet_id])
